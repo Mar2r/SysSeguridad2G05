@@ -63,13 +63,13 @@ namespace SysSeguridad2G05.DAL
 
         public static async Task<List<Rol>> ObtenerTodoAsync()
         {
-            List<Rol> Roles = new List<Rol>();
+            List<Rol> roles = new List<Rol>();
             using (var dbContexto = new DBContexto())
             {
                 //Select Id, Nombre From Rol;
-                Roles = await dbContexto.Rol.ToListAsync();
+                roles = await dbContexto.Rol.ToListAsync();
             }
-            return Roles;
+            return roles;
         }
 
         internal static IQueryable<Rol> QuerySelect(IQueryable<Rol> pQuery, Rol pRol)

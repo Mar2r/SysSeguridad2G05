@@ -7,6 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="10.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\SysSeguridad2G05.BL\SysSeguridad2G05.BL.csproj" />
     <ProjectReference Include="..\SysSeguridad2G05.EN\SysSeguridad2G05.EN.csproj" />
   </ItemGroup>
